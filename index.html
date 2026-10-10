@@ -3,7 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}
+.ckb { position: fixed; inset-inline: 16px; inset-block-end: 16px; z-index: 40; max-width: 560px; margin-inline: auto; display: none; gap: 14px; align-items: center; flex-wrap: wrap; padding: 14px 16px; background: var(--surface); color: var(--fg); border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,.35); font-size: .9rem; }
+.ckb.show { display: flex; }
+.ckb p { margin: 0; flex: 1 1 240px; color: var(--muted); }
+.ckb .btn { padding: 8px 16px; font-size: .9rem; }
+.ckset { background: none; border: 0; padding: 0; margin-inline-start: 14px; font: inherit; color: var(--muted); text-decoration: underline; cursor: pointer; }
+</style>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>Amirreza Alizadeh (امیررضا علیزاده) | Marketing &amp; Consumer Behavior</title>
@@ -477,7 +483,13 @@ gtag('js',new Date());gtag('config','G-N6532Z6SSP');
 
   <footer>
     <span>© 2026 Amirreza Alizadeh · <span lang="fa" dir="rtl">امیررضا علیزاده</span></span>
+    <button type="button" class="ckset" id="ckSet" data-i="ck_set">Cookie settings</button>
   </footer>
+  <div class="ckb" id="ckb" role="dialog" aria-label="Cookies">
+    <p data-i="ck_txt">I use cookies only for anonymous visit statistics. You can accept or decline.</p>
+    <button type="button" class="btn solid" id="ckOk" data-i="ck_ok">Accept</button>
+    <button type="button" class="btn ghost" id="ckNo" data-i="ck_no">Decline</button>
+  </div>
 </div>
 </div>
 
@@ -545,7 +557,7 @@ gtag('js',new Date());gtag('config','G-N6532Z6SSP');
       cert_l: 'Certifications', cert_v: 'Google Analytics 4, Google Ads and HubSpot Marketing (all in progress) · ICDL',
       h_now: 'Now',
       res_l: 'Research', res_v: 'Co-authored econometrics paper on the determinants of life expectancy',
-      l_zen: 'Read on Zenodo', l_ssrn: 'SSRN',
+      l_zen: 'Read on Zenodo', l_ssrn: 'SSRN', ck_txt: 'I use cookies only for anonymous visit statistics. You can accept or decline.', ck_ok: 'Accept', ck_no: 'Decline', ck_set: 'Cookie settings',
       cont_l: 'Content', cont_v: 'Content in Persian and English',
       lang_l: 'Languages', lang_v: 'Persian (first language) · English (formal and academic work) · Italian',
       lang_note: 'Italian: A2 now, working toward B1',
@@ -584,7 +596,7 @@ gtag('js',new Date());gtag('config','G-N6532Z6SSP');
       cert_l: 'گواهی‌ها', cert_v: 'گوگل آنالیتیکس ۴، گوگل ادز و هاب‌اسپات مارکتینگ (همگی در حال گذراندن) · ICDL',
       h_now: 'این روزها',
       res_l: 'پژوهش', res_v: 'مقاله‌ی مشترک اقتصادسنجی درباره‌ی عوامل مؤثر بر امید به زندگی',
-      l_zen: 'مشاهده در Zenodo', l_ssrn: 'SSRN',
+      l_zen: 'مشاهده در Zenodo', l_ssrn: 'SSRN', ck_txt: 'من فقط برای آمار ناشناس بازدید از کوکی استفاده می\u200cکنم. می\u200cتوانید بپذیرید یا رد کنید.', ck_ok: 'قبول', ck_no: 'رد', ck_set: 'تنظیمات کوکی',
       cont_l: 'محتوا', cont_v: 'محتوا به فارسی و انگلیسی',
       lang_l: 'زبان‌ها', lang_v: 'فارسی (زبان اصلی) · انگلیسی (کار رسمی و دانشگاهی) · ایتالیایی',
       lang_note: 'ایتالیایی: اکنون A2، در مسیر B1',
@@ -623,7 +635,7 @@ gtag('js',new Date());gtag('config','G-N6532Z6SSP');
       cert_l: 'Certificazioni', cert_v: 'Google Analytics 4, Google Ads e HubSpot Marketing (tutti in corso) · ICDL',
       h_now: 'Ora',
       res_l: 'Ricerca', res_v: 'Articolo di econometria in co-autoria sui determinanti dell’aspettativa di vita',
-      l_zen: 'Leggi su Zenodo', l_ssrn: 'SSRN',
+      l_zen: 'Leggi su Zenodo', l_ssrn: 'SSRN', ck_txt: 'Uso i cookie solo per statistiche anonime sulle visite. Puoi accettare o rifiutare.', ck_ok: 'Accetta', ck_no: 'Rifiuta', ck_set: 'Impostazioni cookie',
       cont_l: 'Contenuti', cont_v: 'Contenuti in persiano e in inglese',
       lang_l: 'Lingue', lang_v: 'Persiano (madrelingua) · Inglese (lavoro formale e accademico) · Italiano',
       lang_note: 'Italiano: A2 oggi, verso il B1',
@@ -662,7 +674,7 @@ gtag('js',new Date());gtag('config','G-N6532Z6SSP');
       cert_l: 'Certifications', cert_v: 'Google Analytics 4, Google Ads et HubSpot Marketing (tous en cours) · ICDL',
       h_now: 'En ce moment',
       res_l: 'Recherche', res_v: 'Article d’économétrie en coauteur sur les déterminants de l’espérance de vie',
-      l_zen: 'Lire sur Zenodo', l_ssrn: 'SSRN',
+      l_zen: 'Lire sur Zenodo', l_ssrn: 'SSRN', ck_txt: "J'utilise des cookies uniquement pour des statistiques de visite anonymes. Vous pouvez accepter ou refuser.", ck_ok: 'Accepter', ck_no: 'Refuser', ck_set: 'Paramètres des cookies',
       cont_l: 'Contenu', cont_v: 'Contenu en persan et en anglais',
       lang_l: 'Langues', lang_v: 'Persan (langue maternelle) · Anglais (travail formel et académique) · Italien',
       lang_note: 'Italien : A2 aujourd’hui, objectif B1',
@@ -701,7 +713,7 @@ gtag('js',new Date());gtag('config','G-N6532Z6SSP');
       cert_l: 'الشهادات', cert_v: 'Google Analytics 4 وGoogle Ads وHubSpot Marketing (جميعها قيد الدراسة) · ICDL',
       h_now: 'حالياً',
       res_l: 'البحث', res_v: 'ورقة بحثية مشتركة في الاقتصاد القياسي حول محددات متوسط العمر المتوقع',
-      l_zen: 'اقرأ على Zenodo', l_ssrn: 'SSRN',
+      l_zen: 'اقرأ على Zenodo', l_ssrn: 'SSRN', ck_txt: 'أستخدم ملفات تعريف الارتباط فقط لإحصاءات الزيارات المجهولة. يمكنك القبول أو الرفض.', ck_ok: 'قبول', ck_no: 'رفض', ck_set: 'إعدادات ملفات الارتباط',
       cont_l: 'المحتوى', cont_v: 'محتوى بالفارسية والإنجليزية',
       lang_l: 'اللغات', lang_v: 'الفارسية (اللغة الأولى) · الإنجليزية (العمل الرسمي والأكاديمي) · الإيطالية',
       lang_note: 'الإيطالية: A2 حالياً، والهدف B1',
@@ -738,6 +750,22 @@ gtag('js',new Date());gtag('config','G-N6532Z6SSP');
     if (!c) c = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
     root.setAttribute('data-theme', c === 'dark' ? 'light' : 'dark');
   });
+
+  /* cookie consent (GA4 Consent Mode) */
+  (function () {
+    var KEY = 'ck-consent', box = document.getElementById('ckb');
+    function get() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+    function put(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
+    function apply(v) {
+      var g = v === 'granted' ? 'granted' : 'denied';
+      if (window.gtag) gtag('consent', 'update', { analytics_storage: g });
+    }
+    var c = get();
+    if (c === 'granted') apply('granted'); else if (c !== 'denied') box.classList.add('show');
+    document.getElementById('ckOk').addEventListener('click', function () { put('granted'); apply('granted'); box.classList.remove('show'); });
+    document.getElementById('ckNo').addEventListener('click', function () { put('denied'); apply('denied'); box.classList.remove('show'); });
+    document.getElementById('ckSet').addEventListener('click', function () { box.classList.add('show'); });
+  })();
 
   /* copy buttons */
   var copyBtns = document.querySelectorAll('[data-copy]');
