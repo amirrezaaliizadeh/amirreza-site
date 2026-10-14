@@ -2,3 +2,6 @@ wrangler.jsonc
 .assetsignore
 .git
 README.md
+.gitignore
+.wrangler
+.DS_Store
