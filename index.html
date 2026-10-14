@@ -111,6 +111,9 @@ a { color: inherit; }
 .chip:hover { border-color: var(--accent); }
 .chip svg { width: 16px; height: 16px; }
 select.chip { padding-inline: 14px; }
+.langwrap { position: relative; display: inline-flex; }
+.langwrap svg { position: absolute; inset-inline-start: 13px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; pointer-events: none; color: var(--accent); }
+.langwrap select.chip { padding-inline-start: 36px; }
 
 /* hero */
 .stage { position: relative; }
@@ -293,13 +296,13 @@ gtag('js',new Date());gtag('config','G-N6532Z6SSP');
       <a href="#contact" data-i="nav_contact">Contact</a>
     </nav>
     <div class="ctrl">
-      <select class="chip" id="langSel" aria-label="Language">
+      <span class="langwrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2c3 3 3 17 0 20M12 2c-3 3-3 17 0 20"/></svg><select class="chip" id="langSel" aria-label="Language">
         <option value="en" selected>English</option>
         <option value="fa">فارسی</option>
         <option value="it">Italiano</option>
         <option value="fr">Français</option>
         <option value="ar">العربية</option>
-      </select>
+      </select></span>
       <button class="chip" id="themeBtn" type="button" aria-label="Switch light or dark theme">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
       </button>
