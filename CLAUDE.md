@@ -5,3 +5,4 @@
 - Before editing, always `git pull`/fetch and compare with the live site; after editing, commit and push to `main`, then check the live page.
 - A local copy exists at ~/Desktop/Amir/claude/site (no remote). Treat it as stale; re-sync from GitHub instead of editing it.
 - Standing site rules: no photos on the page; no Wikipedia links; five-plus languages (en, fa, it, fr, es, de, ar) with RTL for fa/ar.
+- Podcast pages (/podcast/ and one page per episode) are generated from the RSS by `node scripts/build-podcast.mjs` and rebuilt daily by .github/workflows/podcast.yml. Never edit podcast/ by hand.

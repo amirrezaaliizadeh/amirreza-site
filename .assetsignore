@@ -5,3 +5,7 @@ README.md
 .gitignore
 .wrangler
 .DS_Store
+scripts
+.github
+CLAUDE.md
+README.md
