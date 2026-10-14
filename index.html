@@ -166,7 +166,7 @@ select.chip { padding-inline: 14px; }
 @keyframes slide { to { transform: translateX(-50%); } }
 
 /* stats */
-.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; border-bottom: 1px solid var(--line); }
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; border-bottom: 1px solid var(--line); }
 .stat { padding: 30px 20px 30px 0; border-inline-end: 1px solid var(--line); padding-inline-start: 20px; min-width: 0; }
 .stat:first-child { padding-inline-start: 0; }
 .stat:last-child { border-inline-end: 0; }
@@ -250,11 +250,8 @@ footer { border-top: 1px solid var(--line); padding-top: 24px; color: var(--mute
   .tiles.three { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 640px) {
-  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .stat { padding-inline: 16px; }
-  .stat:nth-child(odd) { padding-inline-start: 0; }
-  .stat:nth-child(2) { border-inline-end: 0; }
-  .stat:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+  .stat { padding: 22px 10px 22px 12px; }
+  .stat p { font-size: .85rem; }
 }
 @media (max-width: 560px) {
   .tiles, .tiles.three { grid-template-columns: minmax(0, 1fr); }
@@ -349,8 +346,7 @@ gtag('js',new Date());gtag('config','G-N6532Z6SSP');
     <div class="stats" id="stats">
       <div class="stat"><b data-count="6">6<em>+</em></b><p data-i="s1">Years of experience</p></div>
       <div class="stat"><b data-count="20">20<em>+</em></b><p data-i="s2">Sponsorship contracts</p></div>
-      <div class="stat"><b data-count="40">40<em>+</em></b><p data-i="s3">Teams managed</p></div>
-      <div class="stat"><b data-count="10">10<em>+</em></b><p data-i="s4">Business courses run</p></div>
+      <div class="stat"><b data-count="10">10<em>+</em></b><p data-i="s3">Business courses run</p></div>
     </div>
 
     <section class="block" id="about">
@@ -537,7 +533,7 @@ gtag('js',new Date());gtag('config','G-N6532Z6SSP');
       lede: 'I work on strategy, marketing and consumer behavior: how people decide what to buy, and why good intentions so often lose to habit.',
       cta: 'Get in touch', cta2: 'Read my paper', cap: 'Iran to Italy', c_iran: 'IRAN', c_italy: 'ITALY',
       mq: ['Strategy', 'Marketing', 'Consumer behavior', 'Sponsorship', 'Sales', 'Global markets', 'Content'],
-      s1: 'Years of experience', s2: 'Sponsorship contracts', s3: 'Teams managed', s4: 'Business courses run',
+      s1: 'Years of experience', s2: 'Sponsorship contracts', s3: 'Business courses run',
       h_about: 'About',
       p1: "I'm a second-year MSc student in Marketing and Global Management at the University of Milano-Bicocca. Before Milan I spent about six years working in Iran: negotiating sports sponsorships, leading sales at a smart-building automation company, managing a business school and working in media and communications.",
       p2: 'Today I work across strategy, marketing and consumer behavior, with a particular interest in the gap between what consumers say they value and what they buy. I also publish content in Persian and in English.',
@@ -576,7 +572,7 @@ gtag('js',new Date());gtag('config','G-N6532Z6SSP');
       lede: 'روی استراتژی، بازاریابی و رفتار مصرف‌کننده کار می‌کنم: اینکه مردم چطور تصمیم می‌گیرند چه بخرند و چرا نیت‌های خوب معمولاً از عادت شکست می‌خورند.',
       cta: 'تماس با من', cta2: 'خواندن مقاله', cap: 'از ایران تا ایتالیا', c_iran: 'ایران', c_italy: 'ایتالیا',
       mq: ['استراتژی', 'بازاریابی', 'رفتار مصرف‌کننده', 'حمایت مالی', 'فروش', 'بازارهای جهانی', 'تولید محتوا'],
-      s1: 'سال تجربه', s2: 'قرارداد حمایت مالی', s3: 'تیم تحت مدیریت', s4: 'دوره‌ی کسب‌وکار',
+      s1: 'سال تجربه', s2: 'قرارداد حمایت مالی', s3: 'دوره‌ی کسب‌وکار',
       h_about: 'درباره‌ی من',
       p1: 'من دانشجوی سال دوم کارشناسی ارشد بازاریابی و مدیریت جهانی در دانشگاه میلان-بیکوکا هستم. پیش از آمدن به میلان حدود شش سال در ایران کار کردم: مذاکره برای قراردادهای حمایت مالی ورزشی، مدیریت فروش در یک شرکت اتوماسیون ساختمان هوشمند، مدیریت یک مدرسه کسب‌وکار و کار در رسانه و ارتباطات.',
       p2: 'امروز روی استراتژی، بازاریابی و رفتار مصرف‌کننده کار می‌کنم و به شکاف میان آنچه مصرف‌کنندگان می‌گویند برایشان مهم است و آنچه می‌خرند علاقه‌ی ویژه دارم. محتوا را هم به فارسی و انگلیسی منتشر می‌کنم.',
@@ -615,7 +611,7 @@ gtag('js',new Date());gtag('config','G-N6532Z6SSP');
       lede: 'Lavoro su strategia, marketing e comportamento del consumatore: come le persone decidono cosa comprare e perché le buone intenzioni perdono così spesso contro l’abitudine.',
       cta: 'Contattami', cta2: 'Leggi il mio articolo', cap: 'Dall’Iran all’Italia', c_iran: 'IRAN', c_italy: 'ITALIA',
       mq: ['Strategia', 'Marketing', 'Comportamento del consumatore', 'Sponsorizzazioni', 'Vendite', 'Mercati globali', 'Contenuti'],
-      s1: 'Anni di esperienza', s2: 'Contratti di sponsorizzazione', s3: 'Squadre gestite', s4: 'Corsi di business gestiti',
+      s1: 'Anni di esperienza', s2: 'Contratti di sponsorizzazione', s3: 'Corsi di business gestiti',
       h_about: 'Chi sono',
       p1: "Sono uno studente del secondo anno della laurea magistrale in Marketing e Mercati Globali all'Università di Milano-Bicocca. Prima di Milano ho lavorato per circa sei anni in Iran: negoziazione di sponsorizzazioni sportive, direzione vendite in un'azienda di automazione per edifici intelligenti, gestione di una business school e attività nei media e nella comunicazione.",
       p2: 'Oggi mi occupo di strategia, marketing e comportamento del consumatore, con un interesse particolare per il divario tra ciò che i consumatori dicono di valorizzare e ciò che acquistano. Pubblico anche contenuti in persiano e in inglese.',
@@ -654,7 +650,7 @@ gtag('js',new Date());gtag('config','G-N6532Z6SSP');
       lede: 'Je travaille sur la stratégie, le marketing et le comportement du consommateur : comment les gens décident de ce qu’ils achètent, et pourquoi les bonnes intentions cèdent si souvent devant l’habitude.',
       cta: 'Me contacter', cta2: 'Lire mon article', cap: 'De l’Iran à l’Italie', c_iran: 'IRAN', c_italy: 'ITALIE',
       mq: ['Stratégie', 'Marketing', 'Comportement du consommateur', 'Parrainage', 'Ventes', 'Marchés mondiaux', 'Contenu'],
-      s1: 'Années d’expérience', s2: 'Contrats de parrainage', s3: 'Équipes gérées', s4: 'Cours de business gérés',
+      s1: 'Années d’expérience', s2: 'Contrats de parrainage', s3: 'Cours de business gérés',
       h_about: 'À propos',
       p1: 'Je suis étudiant en deuxième année de master en Marketing et Management global à l’Université de Milan-Bicocca. Avant Milan, j’ai travaillé environ six ans en Iran : négociation de parrainages sportifs, direction des ventes dans une entreprise d’automatisation de bâtiments intelligents, gestion d’une école de commerce, médias et communication.',
       p2: 'Aujourd’hui je travaille sur la stratégie, le marketing et le comportement du consommateur, avec un intérêt particulier pour l’écart entre ce que les consommateurs disent valoriser et ce qu’ils achètent. Je publie aussi du contenu en persan et en anglais.',
@@ -693,7 +689,7 @@ gtag('js',new Date());gtag('config','G-N6532Z6SSP');
       lede: 'أعمل على الاستراتيجية والتسويق وسلوك المستهلك: كيف يقرر الناس ما يشترونه، ولماذا تخسر النوايا الحسنة أمام العادة في كثير من الأحيان.',
       cta: 'تواصل معي', cta2: 'اقرأ بحثي', cap: 'من إيران إلى إيطاليا', c_iran: 'إيران', c_italy: 'إيطاليا',
       mq: ['الاستراتيجية', 'التسويق', 'سلوك المستهلك', 'الرعاية', 'المبيعات', 'الأسواق العالمية', 'المحتوى'],
-      s1: 'سنوات الخبرة', s2: 'عقود رعاية', s3: 'فرق تحت الإدارة', s4: 'دورات أعمال',
+      s1: 'سنوات الخبرة', s2: 'عقود رعاية', s3: 'دورات أعمال',
       h_about: 'نبذة',
       p1: 'أنا طالب في السنة الثانية من ماجستير التسويق والإدارة العالمية في جامعة ميلانو-بيكوكا. قبل ميلانو عملت نحو ست سنوات في إيران: التفاوض على عقود الرعاية الرياضية، وإدارة المبيعات في شركة لأتمتة المباني الذكية، وإدارة مدرسة أعمال، والعمل في الإعلام والاتصال.',
       p2: 'أعمل اليوم على الاستراتيجية والتسويق وسلوك المستهلك، مع اهتمام خاص بالفجوة بين ما يقول المستهلكون إنهم يقدّرونه وما يشترونه فعلاً. كما أنشر محتوى بالفارسية والإنجليزية.',
